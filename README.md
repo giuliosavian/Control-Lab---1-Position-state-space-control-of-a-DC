@@ -3,7 +3,7 @@
 <!-- INTRO OF THE PROJECT -->
 ## Activity goal
 
-Inside the two folden you will find the first two labs of the control lab course in the university of Padua.
+Inside the two folden you will find the labs 1 of the control lab course in the university of Padua.
 Look at the PDF witch is the report of the activites.
 
 <!-- Get started -->
@@ -18,7 +18,10 @@ For start:
 
 Organizzation:
 1. LAB0: Position PID–control of a DC servomotor with inertia and friction estimation with 
-2. LAB1: Position state–space control of a DC servomotor
+2. LAB1: Position state–space control of a DC
+3. LAB2: Digital position control of a DC servomotor
+4. LAB3: Position control of a DC servomotor with a resonant load
+5. LAB4: Position and balance control of a robot with LQR methods
 
 
 ## Contact
