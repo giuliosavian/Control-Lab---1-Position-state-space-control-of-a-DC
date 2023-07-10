@@ -1,5 +1,0 @@
-# Auto detect text files and perform LF normalization
-*.c linguist-detectable=false
-*.m linguist-detectable=true
-*.c linguist-language=MATLAB
-
