@@ -3,17 +3,27 @@
 <!-- INTRO OF THE PROJECT -->
 ## Activity goal
 
-The purpose of this laboratory activity is to design and test a longitudinal state–space controller
-for the two–wheeled balancing robot (also referred as “two–wheeled inverted pendulum robot”, or “Segway–like robot”) available in laboratory. The controller is designed to simultaneously stabilize the robot body to its upward vertical position, and the robot base to a desired longitudinal position
-set-point. The design is performed by resorting to a simplified model of the robot dynamics, obtained by assuming that the motion occurs along a straight line (i.e. the lateral or heading–angle dynamics is ignored).
+This laboratory activity is articulated in two parts: in the first part, some improvements to the position
+PID–control system designed in the previous laboratory activity are introduced. The improvements
+consist in the implementation of an anti–windup scheme to reduce the large overshoot occurring
+in the step response when the controller output saturates, and a friction plus inertia feedforward
+compensator, which allows to enhance both the accuracy and speed of response of the conventional
+feedback controller.
+The second part of the activity is devoted to the design of a continuous–time position control
+system by using state–space techniques. Both nominal and robust tracking designs are considered.
+Nominal tracking is performed by exploiting a conventional feedforward scheme; on the other hand,
+robust tracking is achieved by either exploiting an integral action (for robust tracking of constant
+set–points, or perfect rejection of constant load disturbances), or by resorting to the internal model
+principle (for robust tracking and perfect rejection of more general, possibly time–varying signals).
 
 The project will touch:
-1. Analytical model of the balancing robot
-2. Tilt estimation
-3. State–space balance–and–position control
-4. Simulink model of the balancing robot (numerical simulations)
-5. Balance–and–position state–space control using LQR methods
-6. Experimental tests
+1. Feedforward compensation
+2. Integrator anti–windup mechanism
+3. Position state–space control design
+4. Robust tracking design with integral action
+5. Robust tracking design with the internal model principle
+6. Robust tracking with the error–space approach
+7. Robust tracking with the extended estimator approach
 
 <!-- Get started -->
 ## Get Started
@@ -22,13 +32,24 @@ For start:
 1. Download and install matlab/simulink
 2. Download and install the related toolbox
 
+## Prerequisite
 
-## Project organization
+Prerequisites for start:
+1. Analytical model of the DC gearmotor
+2. PID control design with frequency response methods, Bode’s method
+3. Estimation of model parameters: Friction and Inertia
+4. Bases of PID control theory
 
-There are two folden:
-1. The "Simulation folden" is used before the lab for tune and write the algorithm with model base design approch
-2. "Realtest folden" rapresent the real data collected during the lab
 
+## Experimental setup
+
+1. Quanser SRV–02 servomotor.
+2. National Instruments PCI–6221 or PCIe–6321 Multifunction data acquisition board.
+3. National Instruments BNC–2110 terminal board.
+4. BNC–terminated connection cables
+5. DC power supply with adjustable voltage output
+6. PC workstation running Matlab/Simulink. The Simulink Desktop Real–Time (SLDRT)
+toolbox
 
 ## Contact
 

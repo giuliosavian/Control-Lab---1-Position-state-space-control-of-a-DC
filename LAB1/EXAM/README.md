@@ -5,7 +5,7 @@
 
 For start:
 1. Open the file "LAB1_exam(FINAL)"
-2. Start learnng
+2. Start learning
 3. Make the hardware setup
 4. Open the file "LAB1_REALTIME_FINALE"
 5. Run the Live script
